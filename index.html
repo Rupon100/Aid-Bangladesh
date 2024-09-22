@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
+    <title>Aid Bangladesh</title>
     <!-- tailwindCss+daisyUi CDN -->    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!-- header section -->
-    <header class=""> 
-        <nav class="w-full bg-stone-100 px-10 py-6 flex justify-between items-center">
+    <header id="scrollHeader" class="bg-transparent sticky top-0 left-0"> 
+        <nav id="navScroll" class="w-full bg-stone-100 px-10 py-6 flex justify-between items-center">
             <div>
                 <!-- <button><a href="#blog.html">Blog</a></button> -->
-                <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400 border-none">Blog</button>
+                <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400 border-none"><a href="./blog.html">Blog</a></button>
             </div>
             <div class="flex flex-row items-center">
                 <img src="./images/logo(2).png" alt="logo">
@@ -22,16 +22,16 @@
             </div>
             <div class="flex flex-row items-center">
                 <img src="./images/coin.png" alt="balance-coin">
-                <p class="font-semibold text-lg text-gray-600"><span id="main-balance" class="px-1">5000</span>BDT</p>
+                <p class="font-semibold text-lg text-gray-600"><span id="main-balance" class="px-1">5500</span>BDT</p>
             </div>
         </nav>
-        <div class="flex flex-row justify-center items-center gap-6 pt-10">
-            <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Doantion</button>
-            <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">History</button>
+        <div class="flex flex-row justify-center items-center gap-6 pt-10 pb-4"> 
+            <button id="donation-btn" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Doantion</button>
+            <button id="history-btn" class="btn px-6 text-base font-semibold hover:bg-lime-400">History</button>
         </div>
     </header>
     <!-- main section -->
-    <main class="max-w-[1200px] mx-auto my-6 px-10 flex flex-col gap-4">
+    <main id="donation-post" class="max-w-[1200px] mx-auto my-6 px-10 flex flex-col gap-4">
         <!-- noakhali flood support -->
         <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
             <div class="basis-1/2  w-[100%]">
@@ -77,7 +77,7 @@
                 <div>
                     <button class="btn bg-gray-300">
                         <img src="./images/coin.png" alt="balance-coin">
-                        <p class="font-semibold text-base text-gray-600"><span id="main-balance" class="pr-1">2400</span>BDT</p>
+                        <p class="font-semibold text-base text-gray-600"><span id="main-balance" class="pr-1">0</span>BDT</p>
                     </button>
                 </div>
                 <h2 class=" md:text-base lg:text-xl font-semibold">Supporting Students Affected by the Quota movement, Bangladesh</h2>
@@ -86,12 +86,16 @@
                 <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
             </div>
         </div>
-         
     </main>
-    <!-- footer section -->
-    <footer class="bg-stone-100 p-6 text-center">
+    <!-- footer section
+    <footer class="bg-stone-100 p-6 text-center bottom-0 ">
         <span>&copy;copyright to Aid Bangladesh</span>
-    </footer>
+    </footer> -->
+    <section id="history-post" class="hidden max-w-[90%] mx-auto my-10 space-y-4">
+        <div class="border rounded-lg p-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a provident eligendi culpa sint! Molestias omnis repudiandae quidem. Omnis, iusto.</p>
+        </div>
+    </section>
     
     <script src="./js/main.js"></script>
 </body>
