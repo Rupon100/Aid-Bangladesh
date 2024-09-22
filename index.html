@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- tailwindCss+daisyUi CDN -->    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header section -->
+    <header class=""> 
+        <nav class="w-full bg-stone-100 px-10 py-6 flex justify-between items-center">
+            <div>
+                <!-- <button><a href="#blog.html">Blog</a></button> -->
+                <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400 border-none">Blog</button>
+            </div>
+            <div class="flex flex-row items-center">
+                <img src="./images/logo(2).png" alt="logo">
+                <h2 class="px-2 text-xl font-semibold">Aid Bangladesh</h2>
+            </div>
+            <div class="flex flex-row items-center">
+                <img src="./images/coin.png" alt="balance-coin">
+                <p class="font-semibold text-lg text-gray-600"><span id="main-balance" class="px-1">5000</span>BDT</p>
+            </div>
+        </nav>
+        <div class="flex flex-row justify-center items-center gap-6 pt-10">
+            <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Doantion</button>
+            <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">History</button>
+        </div>
+    </header>
+    <!-- main section -->
+    <main class="max-w-[1200px] mx-auto my-6 px-10 flex flex-col gap-4">
+        <!-- noakhali flood support -->
+        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
+            <div class="basis-1/2  w-[100%]">
+                <img class="w-full" src="./images/noakhali.png" alt="feni-situation">
+            </div>
+            <div class="basis-1/2 flex flex-col gap-4 sm:gap-2">
+                <div>
+                    <button class="btn bg-gray-300">
+                        <img src="./images/coin.png" alt="balance-coin">
+                        <p class="font-semibold text-base text-gray-600"><span id="main-balance" class="pr-1">0</span>BDT</p>
+                    </button>
+                </div>
+                <h2 class=" md:text-base lg:text-xl font-semibold">Support Flood Relief Efforts in Noakhali</h2>
+                <p class="md:text-sm lg:text-base">Noakhali, a coastal region in Bangladesh, has been severely impacted by recent flooding, leaving thousands of people displaced and vulnerable.<span class="hidden lg:inline"> Torrential rains and rising river levels have caused widespread damage to homes, crops, and infrastructure. Families are struggling with a lack of clean water, food, and medical supplies.</span></p>
+                <input type="text" id="" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
+                <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+            </div>
+        </div>
+        <!-- feni flood support -->
+        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
+            <div class="basis-1/2  w-[100%]">
+                <img class="w-full" src="./images/feni.png" alt="feni-situation">
+            </div>
+            <div class="basis-1/2 flex flex-col gap-4 sm:gap-2">
+                <div>
+                    <button class="btn bg-gray-300">
+                        <img src="./images/coin.png" alt="balance-coin">
+                        <p class="font-semibold text-base text-gray-600"><span id="main-balance" class="pr-1">0</span>BDT</p>
+                    </button>
+                </div>
+                <h2 class=" md:text-base lg:text-xl font-semibold">Support Flood Relief Efforts in Feni</h2>
+                <p class="md:text-sm lg:text-base">The recent floods in Feni, a district in southeastern Bangladesh, have caused widespread devastation, displacing many families and damaging vital infrastructure. <span class="hidden lg:inline">Crops have been destroyed, leading to concerns about food shortages. Many people have been forced to take refuge in temporary shelters, facing health risks due to unsanitary conditions.</span></p>
+                <input type="text" id="" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
+                <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+            </div>
+        </div>
+        <!-- aid for injured in quota movement -->
+        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
+            <div class="basis-1/2  w-[100%]">
+                <img class="w-full" src="./images/quota-protest.png" alt="feni-situation">
+            </div>
+            <div class="basis-1/2 flex flex-col gap-4 sm:gap-2">
+                <div>
+                    <button class="btn bg-gray-300">
+                        <img src="./images/coin.png" alt="balance-coin">
+                        <p class="font-semibold text-base text-gray-600"><span id="main-balance" class="pr-1">2400</span>BDT</p>
+                    </button>
+                </div>
+                <h2 class=" md:text-base lg:text-xl font-semibold">Supporting Students Affected by the Quota movement, Bangladesh</h2>
+                <p class="md:text-sm lg:text-base">The Quota Reform Movement in Bangladesh has been a significant event in recent years, with students from across the country calling for job quota system in public services.<span class="hidden lg:inline">While the movement has sparked important discussions about fairness and employment opportunities, many students have faced difficulties academic disruptions and financial strain due to  political unrest.</span></p>
+                <input type="text" id="" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
+                <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+            </div>
+        </div>
+         
+    </main>
+    <!-- footer section -->
+    <footer class="bg-stone-100 p-6 text-center">
+        <span>&copy;copyright to Aid Bangladesh</span>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
