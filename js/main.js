@@ -55,60 +55,29 @@ function inputValue(id){
 }
  
 
-// const noakhaliBtn = document.getElementById('noakhali-btn');
-// noakhaliBtn.addEventListener('click', ()=> {
-//     const noakhaliInput = inputValue('noakhali-input');
-//     const mainBalance = donateValue('main-balance');
-//     const noakhaliDonate = donateValue('noakhali-donate');
-//     const ttlBalance = noakhaliInput + mainBalance;
-
-//     if(isNaN(noakhaliInput)){
-//         alert('Invalid Input!');
-//         document.getElementById('noakhali-input').value = '';
-//         return;
-//     }else if(noakhaliInput <= 0){
-//         alert('Invalid Input!');
-//         document.getElementById('noakhali-input').value = '';
-//         return;
-//     }
-//     else{
-//         const ttlForBox = noakhaliInput + noakhaliDonate;
-//         document.getElementById('noakhali-donate').innerText = ttlForBox;
-//         document.getElementById('main-balance').innerText = ttlBalance;
-//         document.getElementById('noakhali-input').value = '';
-
-//         const modal = document.getElementById('modal');
-//         noakhaliBtn.onclick = () => {
-//             modal.showModal();
-//         }
-//     }
-    
-// });
-
-//const noakhaliBtn = document.getElementById('noakhali-btn');
- 
-
 //function for input
-function inputCalculate(inputId, mainbalanceId, donateId, place){
+function inputCalculate(inputId, mainbalanceId, donateId, place, modalId){
     const input = inputValue(inputId);
     const mainBalance = donateValue(mainbalanceId);
     const donate = donateValue(donateId);
-    if(isNaN(input)){
+
+    if(isNaN(input) || input <= 0){
+        console.log('holada')
         alert('Invalid Input!');
         document.getElementById(inputId).value = '';
         return;
-    }else if(input <= 0){
-        alert('Invalid Input!');
-        document.getElementById(inputId).value = '';
-        return;
-    }else {
+    } else{
         const ttlDoante = input + donate;
         const updateBalance = mainBalance + input;
         document.getElementById(donateId).innerText = ttlDoante;
         document.getElementById(mainbalanceId).innerText = updateBalance;
         document.getElementById(inputId).value = '';
-    }
 
+        //modal show
+        document.getElementById(modalId).showModal();
+    }    
+   
+    //history date and time
     const floodPlace = document.getElementById(place).innerText; 
     const date = new Date();
     const historyBox = document.getElementById('history-post');
@@ -120,5 +89,4 @@ function inputCalculate(inputId, mainbalanceId, donateId, place){
         </div>
     `;
     historyBox.appendChild(div);
-   
 }

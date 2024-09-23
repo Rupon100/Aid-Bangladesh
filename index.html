@@ -48,23 +48,25 @@
                 <p class="md:text-sm lg:text-base">Noakhali, a coastal region in Bangladesh leaving thousands of people displaced and vulnerable.<span class="hidden lg:inline"> Torrential rains and rising river levels have caused widespread damage to homes, crops, and infrastructure.</span></p>
                 <input type="text" id="noakhali-input" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
 
-                 <!-- modal -->
-                <!-- Open the modal using ID.showModal() method 
-    <button id="noakhali-btn" class="btn" onclick="my_modal_1.showModal()">open modal</button>
-    <dialog id="my_modal_1" class="modal">
-      <div class="modal-box">
-        <h3 class="text-lg font-bold">Hello!</h3>
-        <p class="py-4">Press ESC key or click the button below to close</p>
-        <div class="modal-action">
-          <form method="dialog">
-             if there is a button in form, it will close the modal
-            <button class="btn">Close</button>
-          </form>
-        </div>
-      </div>
-    </dialog> -->
+                <button id="noakhali-btn" onclick="inputCalculate('noakhali-input', 'main-balance', 'noakhali-donate', 'location-1', 'modal')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
 
-                <button id="noakhali-btn" onclick="inputCalculate('noakhali-input', 'main-balance', 'noakhali-donate', 'location-1')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+                <dialog id="modal" class="modal"> 
+                    <div class="modal-box flex flex-col justify-center items-center">
+                      <h3 class="text-3xl font-bold mb-4">Congrats!</h3>
+                      <img src="./images/coin.png" alt="coin">
+                      <p class="py-2">You Have Donated for Humankind</p>
+                      <h4 class="text-lg font-bold">Successfully</h4>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn">Close confiramation</button>
+                        </form>
+                      </div>
+                    </div>
+                </dialog>
+
+                
+
+
             </div>
         </div>
         <!-- feni flood support -->
@@ -82,7 +84,21 @@
                 <h2 class=" md:text-base lg:text-xl font-semibold">Donate for flood<span id="location-2">famine-2024 at Feni, Bangladesh</span></h2>
                 <p class="md:text-sm lg:text-base">The recent floods in Feni, a district in southeastern Bangladesh, have caused widespread devastation, displacing many families and damaging vital infrastructure. <span class="hidden lg:inline">Crops have been destroyed, leading to concerns about food shortages. Many people have been forced to take refuge in temporary shelters, facing health risks due to unsanitary conditions.</span></p>
                 <input type="text" id="feni-input" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
-                <button onclick="inputCalculate('feni-input', 'main-balance', 'feni-donate','location-2')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+                <button onclick="inputCalculate('feni-input', 'main-balance', 'feni-donate','location-2', 'modal')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+
+                <dialog id="modal" class="modal"> 
+                    <div class="modal-box flex flex-col justify-center items-center">
+                      <h3 class="text-3xl font-bold mb-4">Congrats!</h3>
+                      <img src="./images/coin.png" alt="coin">
+                      <p class="py-2">You Have Donated for Humankind</p>
+                      <h4 class="text-lg font-bold">Successfully</h4>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn">Close confiramation</button>
+                        </form>
+                      </div>
+                    </div>
+                </dialog>
             </div>
         </div>
         <!-- aid for injured in quota movement -->
@@ -100,7 +116,21 @@
                 <h2 class=" md:text-base lg:text-xl font-semibold">Supporting Students Affected by the <span id="location-3">Aid injured in Quota movement, Bangladesh</span></h2>
                 <p class="md:text-sm lg:text-base">The Quota Reform Movement in Bangladesh has been a significant event in recent years.<span class="hidden lg:inline">While the movement has sparked important discussions about fairness and employment opportunities, many students have faced difficulties academic disruptions and financial strain due to  political unrest.</span></p>
                 <input type="text" id="student-input" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
-                <button onclick="inputCalculate('student-input', 'main-balance', 'student-aid','location-3')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+                <button onclick="inputCalculate('student-input', 'main-balance', 'student-aid','location-3', 'modal')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
+
+                <dialog id="modal" class="modal"> 
+                    <div class="modal-box flex flex-col justify-center items-center">
+                      <h3 class="text-3xl font-bold mb-4">Congrats!</h3>
+                      <img src="./images/coin.png" alt="coin">
+                      <p class="py-2">You Have Donated for Humankind</p>
+                      <h4 class="text-lg font-bold">Successfully</h4>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn">Close confiramation</button>
+                        </form>
+                      </div>
+                    </div>
+                </dialog>
             </div>
         </div>
     </main>
