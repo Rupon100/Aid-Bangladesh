@@ -30,28 +30,28 @@
         <div class="space-y-2">
             <div class="collapse collapse-arrow bg-base-200">
               <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-title text-lg sm:text-xl font-medium">What is the Document Object Model (DOM)?</div>
               <div class="collapse-content">
                 <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each part of the document (such as elements, attributes, and text) is represented as a node.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-title text-lg sm:text-xl font-medium">How do you select an element from the DOM?</div>
               <div class="collapse-content">
                 <p>document.getElementById('header') will select the element with the ID "header." If you need to select elements by class name, you can use document.getElementsByClassName(), which returns an array-like collection of all elements that have the specified class. Similarly, </p>
               </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-title text-lg sm:text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
               <div class="collapse-content">
                 <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events triggered by its child elements. Instead of adding individual event listeners to each child element, you can place a single listener on the parent and handle events as they "bubble up" through the DOM hierarchy.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-title text-lg sm:text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
                   <p> To get an attribute, use getAttribute(), and to set or remove one, use setAttribute() or removeAttribute(). For standard attributes, you can access them directly (e.g., element.id). For styles, you can retrieve inline styles with element.style or get computed styles using getComputedStyle(). To set styles, use the style property (e.g., element.style.color = 'red'), or apply multiple styles with cssText. Additionally, use classList to manage CSS classes (e.g., element.classList.add('active')). This approach allows for dynamic and efficient manipulation of the DOM.</p>
                 </div>
