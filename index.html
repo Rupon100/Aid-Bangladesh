@@ -13,7 +13,6 @@
     <header id="scrollHeader" class="bg-transparent sticky top-0 left-0"> 
         <nav id="navScroll" class="w-full bg-stone-100 px-4 sm:px-10 py-6 flex justify-between items-center">
             <div>
-                <!-- <button><a href="#blog.html">Blog</a></button> -->
                 <button class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400 border-none"><a href="./blog.html">Blog</a></button>
             </div>
             <div class="flex flex-col sm:flex-row items-center">
@@ -22,18 +21,18 @@
             </div>
             <div class="flex flex-row items-center">
                 <img src="./images/coin.png" alt="balance-coin">
-                <p class="font-semibold text-lg text-gray-600"><span id="main-balance" class="px-1">1000</span>BDT</p>
+                <p class="font-semibold text-lg text-gray-600"><span id="main-balance" class="px-1">5500</span>BDT</p>
             </div>
         </nav>
         <div class="flex flex-row justify-center items-center gap-6 pt-10 pb-4"> 
-            <button id="donation-btn" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Doantion</button>
-            <button id="history-btn" class="btn px-6 text-base font-semibold hover:bg-lime-400">History</button>
+            <button id="donation-btn" class="btn btn-active border-none px-6 text-base font-semibold bg-lime-300 hover:bg-lime-300">Doantion</button>
+            <button id="history-btn" class="btn btn-active border-none px-6 text-base font-semibold">History</button>
         </div>
     </header>
     <!-- main section -->
-    <main id="donation-post" class="max-w-[1200px] mx-auto my-6 px-10 flex flex-col gap-4">
+    <main id="donation-post" class="max-w-[1200px] mx-auto my-6 px-10 flex flex-col gap-6">
         <!-- noakhali flood support -->
-        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
+        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-6 shadow-md">
             <div class="basis-1/2  w-[100%]">
                 <img class="w-full max-h-[400px]" src="./images/noakhali.png" alt="feni-situation">
             </div>
@@ -44,7 +43,7 @@
                         <p class="font-semibold text-base text-gray-600"><span id="noakhali-donate" class="pr-1">0</span>BDT</p>
                     </button>
                 </div>
-                <h2 class="md:text-base lg:text-xl font-semibold">Donate for<span id="location-1">Flood Refief Noakhali, Bangladesh</span></h2>
+                <h2 class="md:text-base lg:text-xl font-semibold"><span id="location-1">Donate for Flood at Noakhali, Bangladesh</span></h2>
                 <p class="md:text-sm lg:text-base">Noakhali, a coastal region in Bangladesh leaving thousands of people displaced and vulnerable.<span class="hidden lg:inline"> Torrential rains and rising river levels have caused widespread damage to homes, crops, and infrastructure.</span></p>
                 <input type="text" id="noakhali-input" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
 
@@ -70,7 +69,7 @@
             </div>
         </div>
         <!-- feni flood support -->
-        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
+        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-6 shadow-md">
             <div class="basis-1/2  w-[100%]">
                 <img class="w-full max-h-[400px]" src="./images/feni.png" alt="feni-situation">
             </div>
@@ -81,7 +80,7 @@
                         <p class="font-semibold text-base text-gray-600"><span id="feni-donate" class="pr-1">0</span>BDT</p>
                     </button>
                 </div>
-                <h2 class=" md:text-base lg:text-xl font-semibold">Donate for flood<span id="location-2">famine-2024 at Feni, Bangladesh</span></h2>
+                <h2 class=" md:text-base lg:text-xl font-semibold"><span id="location-2">Donate for Flood Relief in Feni,Bangladesh</span></h2>
                 <p class="md:text-sm lg:text-base">The recent floods in Feni, a district in southeastern Bangladesh, have caused widespread devastation, displacing many families and damaging vital infrastructure. <span class="hidden lg:inline">Crops have been destroyed, leading to concerns about food shortages. Many people have been forced to take refuge in temporary shelters, facing health risks due to unsanitary conditions.</span></p>
                 <input type="text" id="feni-input" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
                 <button onclick="inputCalculate('feni-input', 'main-balance', 'feni-donate','location-2', 'modal')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
@@ -102,7 +101,7 @@
             </div>
         </div>
         <!-- aid for injured in quota movement -->
-        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-4">
+        <div class="border rounded-xl p-6 flex justify-center flex-col md:flex-row items-center gap-6 shadow-md">
             <div class="basis-1/2  w-[100%]">
                 <img class="w-full max-h-[400px]" src="./images/quota-protest.png" alt="feni-situation">
             </div>
@@ -113,7 +112,7 @@
                         <p class="font-semibold text-base text-gray-600"><span id="student-aid" class="pr-1">0</span>BDT</p>
                     </button>
                 </div>
-                <h2 class=" md:text-base lg:text-xl font-semibold">Supporting Students Affected by the <span id="location-3">Aid injured in Quota movement, Bangladesh</span></h2>
+                <h2 class=" md:text-base lg:text-xl font-semibold"><span id="location-3">Aid for Injured in the Quota Movement</span></h2>
                 <p class="md:text-sm lg:text-base">The Quota Reform Movement in Bangladesh has been a significant event in recent years.<span class="hidden lg:inline">While the movement has sparked important discussions about fairness and employment opportunities, many students have faced difficulties academic disruptions and financial strain due to  political unrest.</span></p>
                 <input type="text" id="student-input" placeholder="Enter Donation Amount" class="border rounded-md p-2 lg:p-4 outline-none">
                 <button onclick="inputCalculate('student-input', 'main-balance', 'student-aid','location-3', 'modal')" class="btn px-6 text-base font-semibold bg-lime-300 hover:bg-lime-400">Donate Now</button>
