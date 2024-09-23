@@ -89,11 +89,10 @@ function inputValue(id){
  
 
 //function for input
-function inputCalculate(inputId, mainbalanceId, donateId){
+function inputCalculate(inputId, mainbalanceId, donateId, place){
     const input = inputValue(inputId);
     const mainBalance = donateValue(mainbalanceId);
     const donate = donateValue(donateId);
-
     if(isNaN(input)){
         alert('Invalid Input!');
         document.getElementById(inputId).value = '';
@@ -105,11 +104,21 @@ function inputCalculate(inputId, mainbalanceId, donateId){
     }else {
         const ttlDoante = input + donate;
         const updateBalance = mainBalance + input;
-
         document.getElementById(donateId).innerText = ttlDoante;
         document.getElementById(mainbalanceId).innerText = updateBalance;
-
         document.getElementById(inputId).value = '';
     }
+
+    const floodPlace = document.getElementById(place).innerText; 
+    const date = new Date();
+    const historyBox = document.getElementById('history-post');
+    const div = document.createElement('div');
+    div.innerHTML = `
+        <div class="border rounded-lg p-6">
+            <h1 class="text-xl font font-semibold py-1">${input} Taka is Donated for ${floodPlace}</h1>
+            <p>Date: ${date.toLocaleDateString()} ${date.toLocaleTimeString()}</p>
+        </div>
+    `;
+    historyBox.appendChild(div);
    
 }
