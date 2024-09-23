@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
     <!-- header section -->
     <header id="scrollHeader" class="bg-transparent sticky top-0 left-0"> 
         <nav id="navScroll" class="w-full bg-stone-100 px-4 sm:px-10 py-6 flex justify-between items-center">
@@ -24,7 +24,7 @@
                 <p class="font-semibold text-lg text-gray-600"><span id="main-balance" class="px-1">5500</span>BDT</p>
             </div>
         </nav>
-        <div class="flex flex-row justify-center items-center gap-6 pt-10 pb-4"> 
+        <div class="flex flex-row justify-center items-center gap-6 pt-4 sm:pt-10 pb-4"> 
             <button id="donation-btn" class="btn btn-active border-none px-6 text-base font-semibold bg-lime-300 hover:bg-lime-300">Doantion</button>
             <button id="history-btn" class="btn btn-active border-none px-6 text-base font-semibold">History</button>
         </div>
@@ -62,10 +62,6 @@
                       </div>
                     </div>
                 </dialog>
-
-                
-
-
             </div>
         </div>
         <!-- feni flood support -->
@@ -134,20 +130,15 @@
         </div>
     </main>
 
-   
-
-    <!-- footer section
-    <footer class="bg-stone-100 p-6 text-center bottom-0 ">
-        <span>&copy;copyright to Aid Bangladesh</span>
-    </footer> -->
-
     <!-- history section -->
-    <section id="history-post" class="hidden max-w-[90%] mx-auto my-10 space-y-4">
-        <!-- <div class="border rounded-lg p-6">
-            <h1>100 Taka is Donated for famine-224 at Feni, Bangladesh</h1>
-            <p>time</p>
-        </div> -->
+    <section id="history-post" class="hidden max-w-[90%] mx-auto my-10 space-y-4 h-[80%]">
+         
     </section>
+
+     
+    <footer class="bg-stone-100 p-8 text-center mt-auto">
+         
+    </footer>
     
     <script src="./js/main.js"></script>
 </body>
