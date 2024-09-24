@@ -35,10 +35,7 @@ function donateValue(id){
     const value = document.getElementById(id).textContent;
     return parseFloat(value);
 }
-// const mainBalance = donateValue('main-balance');
-// const noakhaliDonate = donateValue('noakhali-donate');
-// const feniDonate = donateValue('feni-donate');
-// const studentAid = donateValue('student-aid');
+ 
 
 //function for input
 function inputValue(id){
@@ -54,7 +51,6 @@ function inputCalculate(inputId, mainbalanceId, donateId, place, modalId){
     const donate = donateValue(donateId);
 
     if(isNaN(input) || input > mainBalance || input < 0){
-        console.log('holada')
         alert('Invalid Donation Amount!');
         document.getElementById(inputId).value = '';
         return;
@@ -82,4 +78,4 @@ function inputCalculate(inputId, mainbalanceId, donateId, place, modalId){
         </div>
     `;
     historyBox.appendChild(div);
-}
+};
