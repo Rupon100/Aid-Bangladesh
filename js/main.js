@@ -6,7 +6,7 @@ window.addEventListener('scroll', ()=>{
     const nav = document.getElementById('navScroll');
     if(window.scrollY > 40){
         nav.classList.remove('bg-stone-100');
-        header.classList.add('bg-gray/60', 'backdrop-blur-xl') 
+        header.classList.add('bg-gray/60', 'backdrop-blur-3xl') 
     } else {
         nav.classList.add('bg-stone-100');
     }
