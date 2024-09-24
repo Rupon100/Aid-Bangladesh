@@ -50,7 +50,7 @@ function inputCalculate(inputId, mainbalanceId, donateId, place, modalId){
     const mainBalance = donateValue(mainbalanceId);
     const donate = donateValue(donateId);
 
-    if(isNaN(input) || input > mainBalance || input < 0){
+    if(isNaN(input) || input > mainBalance || input <= 0){
         alert('Invalid Donation Amount!');
         document.getElementById(inputId).value = '';
         return;
