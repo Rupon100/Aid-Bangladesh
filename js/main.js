@@ -40,7 +40,7 @@ function donateValue(id){
 //function for input
 function inputValue(id){
     const input = document.getElementById(id).value;
-    return parseFloat(input);
+    return Number(input);
 }
  
 
@@ -59,11 +59,13 @@ function inputCalculate(inputId, mainbalanceId, donateId, place, modalId){
         const updateBalance = mainBalance - input;
         document.getElementById(donateId).innerText = ttlDoante;
         document.getElementById(mainbalanceId).innerText = updateBalance;
+       
         document.getElementById(inputId).value = '';
 
         //modal show
         document.getElementById(modalId).showModal();
     }    
+
    
     //history date and time
     const floodPlace = document.getElementById(place).innerText; 
