@@ -77,7 +77,7 @@ function inputCalculate(inputId, mainbalanceId, donateId, place, modalId){
     div.innerHTML = `
         <div class="border rounded-lg p-6">
             <h1 class="text-xl font font-semibold py-1">${input} Taka is Donated for ${floodPlace}</h1>
-            <p>Date: ${date.toLocaleDateString()} ${date.toLocaleTimeString()} (Bangladesh Standerd Time)</p>
+            <p>Date: ${date}</p>
             
         </div>
     `;
